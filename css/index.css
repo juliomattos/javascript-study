@@ -134,5 +134,23 @@ background-color: lightcoral;
 }
 
 #mensagens-erro{
+
 	color: red;
+	font-weight: bold;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela{
+
+	width: 300px;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+.invisivel{
+	display: none;
 }

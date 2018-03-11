@@ -3,6 +3,7 @@
 var pacientes = document.querySelectorAll(".paciente");
 
 
+
 // looping passando por todos os pacientes existentes na tabela
 for (var i = 0; i < pacientes.length; i++) {
 
@@ -55,41 +56,26 @@ function calculaImc(peso, altura){
 	return imc.toFixed(2);
 }
 
+//função para validar o peso
 function validaPeso(peso){
-
 	if (peso >= 0 && peso <= 500) {
-		return true;
-	}else
-	{
-		return false;	
-	}
-	
-}
 
-function validaAltura(altura){
-
-	if (altura >= 0 && altura <= 3.00 ) {
 		return true;
 	}else
 	{
 		return false;
 	}
-	
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//função para validar altura
+function validaAltura(altura){
+	if (altura>= 0 && altura <= 3.0) {
+		return true;
+	}else{
+		return false;
+	}
+}
 
 
 

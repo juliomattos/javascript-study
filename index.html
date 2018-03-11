@@ -18,6 +18,8 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
+				<label>Filtrar:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite no nome a ser filtrado...">
 				<table>
 					<thead>
 						<tr>
@@ -39,7 +41,7 @@
 
 						<tr class="paciente" >
 							<td class="info-nome">João</td>
-							<td class="info-peso">510</td>
+							<td class="info-peso">501</td>
 							<td class="info-altura">1.72</td>
 							<td class="info-gordura">40</td>
 							<td class="info-imc">0</td>
@@ -69,13 +71,15 @@
 						</tr>
 					</tbody>
 				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao importar os pacientes</span>
+				<button id="adiciona-paciente" type="" class="bto-importa">Importar</button>
 
 			</section>
 			<section class="container">
     			<h2 id="titulo-form">Adicionar novo paciente</h2>
     				<form id="form-adiciona">
     					<ul id="mensagens-erro">
-    						
+    			
     					</ul>
         				<div class="">
             				<label for="nome">Nome:</label>
@@ -99,5 +103,8 @@
 		</main>
         <script src="js/calculaImc.js"></script>>
         <script src="js/adicionaPaciente.js"></script>
+        <script src="js/removerPaciente.js" ></script>
+        <script src="js/filtra.js" ></script>
+        <script src="js/importa.js" ></script>
 	</body>
 </html>
